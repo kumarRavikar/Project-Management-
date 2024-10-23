@@ -1,0 +1,22 @@
+{
+    "name": "task-management-tool",
+    "version": "1.0.0",
+    "description": "A simple task management tool built with HTML, CSS, and JavaScript.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "task",
+      "management",
+      "tool"
+    ],
+    "author": "Kumar Ravikar",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.18.1",   
+      "body-parser": "^1.19.0" 
+    }
+  }
+  

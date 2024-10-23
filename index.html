@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Management Tool</h1>
+            <button id="new-task-btn">+ New Task</button>
+        </header>
+
+        <!-- New Task Modal -->
+        <div id="new-task-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>New Task</h2>
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="task-title">Task Title:</label>
+                        <input type="text" id="task-title" name="task-title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="task-project">Project:</label>
+                        <input type="text" id="task-project" name="task-project">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-priority">Priority:</label>
+                        <select id="task-priority" name="task-priority">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-date">Due Date:</label>
+                        <input type="date" id="task-date" name="task-date">
+                    </div>
+
+                    <button type="submit" class="submit-btn">Add Task</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Demo Projects Section -->
+        <section id="demo-projects">
+            <h2>Demo Projects</h2>
+            <div class="project">
+                <h3>Project 1: Website Redesign</h3>
+                <ul>
+                    <li>Task: Create wireframes - Due: 2024-10-01 - Priority: High</li>
+                    <li>Task: Design mockups - Due: 2024-10-05 - Priority: Medium</li>
+                    <li>Task: Develop front-end - Due: 2024-10-15 - Priority: High</li>
+                    <li>Task: User testing - Due: 2024-10-20 - Priority: Low</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Project 2: Mobile App Launch</h3>
+                <ul>
+                    <li>Task: Define features - Due: 2024-11-01 - Priority: High</li>
+                    <li>Task: Create API documentation - Due: 2024-11-10 - Priority: Medium</li>
+                    <li>Task: Develop backend - Due: 2024-11-20 - Priority: High</li>
+                    <li>Task: Beta testing - Due: 2024-11-25 - Priority: Medium</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Project 3: Marketing Campaign</h3>
+                <ul>
+                    <li>Task: Create content calendar - Due: 2024-09-30 - Priority: Medium</li>
+                    <li>Task: Design social media assets - Due: 2024-10-05 - Priority: High</li>
+                    <li>Task: Launch email campaign - Due: 2024-10-10 - Priority: High</li>
+                    <li>Task: Analyze campaign results - Due: 2024-10-20 - Priority: Low</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Task List -->
+        <section id="task-list">
+            <h2>All Tasks</h2>
+            <ul id="tasks"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

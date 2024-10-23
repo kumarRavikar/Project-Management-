@@ -1,0 +1,22 @@
+[
+  {
+    "id": 2,
+    "task": "Build a task management tool",
+    "completed": true
+  },
+  {
+    "task": "New Task",
+    "completed": true,
+    "id": 3
+  },
+  {
+    "task": "Another Task",
+    "completed": false,
+    "id": 4
+  },
+  {
+    "task": "Task description",
+    "completed": false,
+    "id": 5
+  }
+]

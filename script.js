@@ -4,6 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtn = document.querySelector('.close');
     const taskForm = document.getElementById('task-form');
     const taskList = document.getElementById('tasks');
+    // Function to add delete button functionality for projects
+    const addDeleteButtonFunctionality = () => {
+        document.querySelectorAll('.delete-project-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const projectElement = event.target.closest('.project');
+                projectElement.remove();  // Remove the project element from DOM
+
+                // Optionally, update local storage or backend here if projects are saved
+                // Code for updating local storage or server could be added here
+            });
+        });
+    };
 
     // Load tasks from local storage (if available)
     const loadTasks = () => {
@@ -72,4 +84,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load existing tasks
     loadTasks();
+    addDeleteButtonFunctionality(); // Initialize delete button functionality
 });
